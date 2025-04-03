@@ -4,6 +4,10 @@ public class UpiPayStrategy implements PayStrategy {
 
     String upiId;
 
+    UpiPayStrategy(String upiId){
+        this.upiId = upiId;
+    }
+
     @Override
     public boolean pay(int amount) {
 

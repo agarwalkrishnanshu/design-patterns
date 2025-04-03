@@ -2,12 +2,16 @@ package BehavioralPatterns.Strategy.WithStrategy.Payment;
 
 public class CreditCardPayStrategy implements PayStrategy {
 
-    String creditCardNo;
+    String cardNumber;
+
+    CreditCardPayStrategy(String cardNumber){
+        this.cardNumber = cardNumber;
+    }
 
     @Override
     public boolean pay(int amount) {
 
-        if(!creditCardNo.isEmpty()){
+        if(!cardNumber.isEmpty()){
             System.out.println("Paying " + amount + " using credit card");
             return true;
         }else{
@@ -19,7 +23,6 @@ public class CreditCardPayStrategy implements PayStrategy {
 
     @Override
     public void collectPaymentDetails() {
-
-        creditCardNo = "xxxxxxxxxxxxx"; // Sign in
+        cardNumber = "xxxxxxxxxxxxxx"; // Sign in
     }
 }
