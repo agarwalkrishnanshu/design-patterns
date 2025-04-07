@@ -22,13 +22,9 @@ public class PizzaBillingDemo {
         BasePizza mushroomVegDelightExtraCheese = new Mushroom(vegDelightExtraCheese);
         System.out.println("Mushroom Extra Cheese Veg Delight Pizza: "+ mushroomVegDelightExtraCheese.cost());
 
-
         BasePizza farmhouse = new FarmHouse();
         BasePizza farmhouseExtraCheese = new ExtraCheese(farmhouse);
         BasePizza mushroomFarmhouseExtraCheese = new Mushroom(farmhouseExtraCheese);
         System.out.println("Mushroom Extra Cheese Farmhouse Pizza: "+ mushroomFarmhouseExtraCheese.cost());
-
-
-
     }
 }
